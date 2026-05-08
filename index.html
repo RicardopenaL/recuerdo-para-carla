@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Un año de recuerdos con Carla</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="decoracion">
+    <span>💗</span>
+    <span>💙</span>
+    <span>💜</span>
+    <span>✨</span>
+    <span>🩷</span>
+    <span>💕</span>
+  </div>
+
+  <main class="contenedor">
+    <section class="progreso-contenedor">
+      <div class="progreso-info">
+        <span id="textoProgreso">Progreso: 0%</span>
+        <span id="contadorPregunta">Inicio</span>
+      </div>
+
+      <div class="barra-progreso">
+        <div class="barra-relleno" id="barraRelleno"></div>
+      </div>
+    </section>
+
+    <section class="pantalla activa" id="pantallaInicio">
+      <h1>Un año de recuerdos</h1>
+
+      <p>
+        Carla, preparé este pequeño recorrido para recordar algunos momentos
+        especiales de este primer año desde que empezamos a hablar.
+      </p>
+
+      <p class="texto-suave">
+        Responde cada pregunta para desbloquear recuerdos y completar el progreso hasta el 100%.
+      </p>
+
+      <button class="boton-principal" id="btnEmpezar">
+        Empezar nuestro recorrido ✨
+      </button>
+    </section>
+
+    <section class="pantalla" id="pantallaJuego">
+      <article class="tarjeta">
+        <span class="etiqueta" id="numeroPregunta"></span>
+
+        <h2 id="tituloPregunta"></h2>
+
+        <div class="opciones" id="contenedorOpciones"></div>
+
+        <div class="mensaje" id="cajaMensaje">
+          <p id="mensajeRespuesta"></p>
+
+          <div class="recuerdo">
+            <strong>Recuerdo desbloqueado:</strong>
+            <p id="textoRecuerdo"></p>
+          </div>
+
+          <button class="boton-principal" id="btnSiguiente">
+            Siguiente recuerdo 💜
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <section class="pantalla" id="pantallaFinal">
+      <h1>✨ Progreso completado: 100% ✨</h1>
+
+      <article class="tarjeta-final">
+        <h2>Recuerdo final desbloqueado:</h2>
+
+        <p>
+          Un año de conversaciones, distancia, cariño, paciencia y momentos
+          que significaron más de lo que imaginábamos.
+        </p>
+      </article>
+
+      <article class="carta-final">
+        <p>
+          Carla, llegaste al final de este pequeño recorrido 🩷
+        </p>
+
+        <p>
+          Quise hacerte esto porque se cumplió un año desde que empezamos a hablar,
+          y aunque muchas cosas han pasado a la distancia, cada momento compartido
+          ha tenido un valor muy especial para mí.
+        </p>
+
+        <p>
+          No quería hacer algo exagerado ni decir cosas que todavía pertenecen al futuro,
+          porque sé que ahora estamos en una etapa bonita, tranquila, en plan amigos,
+          conociéndonos mejor y viendo qué puede pasar cuando por fin nos veamos en persona.
+        </p>
+
+        <p>
+          Pero aun así, quería que supieras que este año no ha sido cualquier cosa para mí.
+        </p>
+
+        <p>
+          Gracias por cada conversación, por cada llamada, por cada risa, por cada momento
+          en el que estuvimos ahí aunque fuera desde lejos. Gracias por tu forma de ser,
+          por tu paciencia, por escucharme, por compartir conmigo partes de tu vida y por
+          permitirme conocer poco a poco a la persona tan especial que eres.
+        </p>
+
+        <p>
+          Me gusta pensar que, aunque la distancia no siempre ha sido fácil, también nos ha
+          enseñado a valorar los pequeños detalles: un mensaje, una llamada, una serie vista
+          al mismo tiempo, una fecha recordada, una conversación larga o simplemente saber
+          que la otra persona está ahí.
+        </p>
+
+        <p>
+          Este primer año no lo veo como una promesa de algo obligado, sino como un recuerdo
+          bonito de todo lo que hemos construido hasta ahora. Y también como una puerta abierta
+          a lo que pueda pasar más adelante, con calma, sin presiones y dejando que las cosas
+          se den de la forma más sincera posible.
+        </p>
+
+        <p>
+          Ojalá cuando llegue el momento de vernos en persona podamos confirmar muchas cosas,
+          reírnos de todo lo que imaginamos, crear recuerdos nuevos y vivir momentos que ya no
+          dependan de una pantalla.
+        </p>
+
+        <p>
+          Por ahora, solo quiero agradecerte por haber llegado a mi vida, por quedarte,
+          por compartir este tiempo conmigo y por hacer que este año haya sido más bonito
+          de lo que esperaba.
+        </p>
+
+        <p>
+          Feliz primer año desde aquel 9-10 de mayo, Carla 🩷
+          <br>
+          Gracias por ser parte de esta historia.
+        </p>
+      </article>
+
+      <div class="botones-finales">
+        <button class="boton-principal" id="btnGuardar">
+          Guardar este recuerdo 💜
+        </button>
+
+        <button class="boton-secundario" id="btnReiniciar">
+          Volver a empezar ✨
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
